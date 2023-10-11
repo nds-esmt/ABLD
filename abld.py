@@ -62,7 +62,7 @@ if check_password():
             })
         # send to OpenAI
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4",
             messages = st.session_state.messages)
         assistant_msg = response.choices[0].message
         # st.write(response)
